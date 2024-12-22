@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://kyoety.github.io/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -45,6 +46,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -69,6 +72,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "querystring": "^0.2.1",
     "tailwindcss": "^3.4.10"
   },
