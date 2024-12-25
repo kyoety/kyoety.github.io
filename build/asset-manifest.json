@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0799906b.css",
-    "main.js": "/static/js/main.20fe34d7.js",
+    "main.css": "/static/css/main.4b345de7.css",
+    "main.js": "/static/js/main.053f9b84.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/ASTAT.png": "/static/media/ASTAT.71681c29f9f341e05958.png",
     "static/media/AFACEPULL.png": "/static/media/AFACEPULL.70b8c06b6d1e057893cc.png",
@@ -13,7 +13,6 @@
     "static/media/PPORCH.png": "/static/media/PPORCH.9274b2a11525211cfbba.png",
     "static/media/ABOURD.png": "/static/media/ABOURD.f4687789825433e890c0.png",
     "static/media/tutori.png": "/static/media/tutori.a501ac23f6f57cb776d2.png",
-    "static/media/InterVariable.ttf": "/static/media/InterVariable.c9f788f6e7ebaec75d7c.ttf",
     "static/media/AYBFISH.jpeg": "/static/media/AYBFISH.a19110dd9c0e1f1b0142.jpeg",
     "static/media/hello_there.mp4": "/static/media/hello_there.341a88dace340a74d65b.mp4",
     "static/media/headshot.png": "/static/media/headshot.557f805076f1940d17ad.png",
@@ -30,12 +29,12 @@
     "static/media/cat_mouse.png": "/static/media/cat_mouse.17912fdf05d365c21dac.png",
     "static/media/hover_play.png": "/static/media/hover_play.65fdde20811b24f1b829.png",
     "index.html": "/index.html",
-    "main.0799906b.css.map": "/static/css/main.0799906b.css.map",
-    "main.20fe34d7.js.map": "/static/js/main.20fe34d7.js.map",
+    "main.4b345de7.css.map": "/static/css/main.4b345de7.css.map",
+    "main.053f9b84.js.map": "/static/js/main.053f9b84.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0799906b.css",
-    "static/js/main.20fe34d7.js"
+    "static/css/main.4b345de7.css",
+    "static/js/main.053f9b84.js"
   ]
 }
