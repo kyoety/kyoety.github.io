@@ -48,7 +48,7 @@ function AboutMe() {
     ];
 
     return (
-        <div className="flex flex-col w-full text-left px-20 ">
+        <div className="flex flex-col w-full text-left px-20 mt-8">
             <div className="flex flex-col gap-4 justify-center w-full text-black max-md:max-w-full ">
                 <h1 className="text-5xl font-['Myfont'] max-md:max-w-full">
                     A bit about me:
