@@ -170,52 +170,62 @@ const info = {
         {
             title: "Tony - Digital",
             date:"September 2024",
-            photo: ABOURD
+            photo: ABOURD,
+            angle: "3deg"
         },
         {
             title: "Porch - Canon DSLR",
             date:"October 2024",
-            photo: PPORCH
+            photo: PPORCH,
+            angle: "0deg"
         },
         {
             title: "Figure 10min - Graphite Pencil",
             date:"July 2024",
-            photo: ABACKSIT
+            photo: ABACKSIT,
+            angle: "-3deg"
         },
         {
             title: "Figure 15min - Graphite Pencil",
             date:"July 2024",
-            photo: ABACK
+            photo: ABACK,
+            angle: "0deg"
         },
         {
             title: "Figure 10min - Pencil Crayon",
             date:"June 2024",
-            photo: ABLUESIT
+            photo: ABLUESIT,
+            angle: "0deg"
         },
         {
             title: "Irish Rainbow - Canon DSLR",
             date:"August 2024",
-            photo: PRBOW
+            photo: PRBOW,
+            angle: "0deg"
         },
         {
             title: "Figure 15min - Pencil Crayon",
             date:"June 2024",
-            photo: ABLUELAY
+            photo: ABLUELAY,
+            angle: "0deg"
         },
         {
             title: "Marble Busts - Acrylic",
             date:"March 2023",
-            photo: ASTAT
+            photo: ASTAT,
+            angle: "-3deg"
         },
         {
             title: "Fish Art Cover - Digital",
             date:"February 2023",
-            photo: AYBFISH
+            photo: AYBFISH,
+            angle: "0deg"
         },
         {
             title: "Distortion - Graphite Pencil",
             date:"November 2022",
-            photo: AFACEPULL
+            photo: AFACEPULL,
+            angle: "3deg"
         }
     ],
 

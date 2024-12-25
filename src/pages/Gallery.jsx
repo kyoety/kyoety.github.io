@@ -12,9 +12,9 @@ function Gallery() {
 
     
     return (
-      <div className="mb-16 mt-16 h-full mx-48 px-10 ">
+      <div className="mb-16 mt-24 h-full mx-48 px-10 ">
         <div className="md:mb-5 w-full flex flex-row justify-between">
-            <div className="text-left">
+            <div className="mx-auto max-w-4xl text-left">
                 <Link to='/'>
                     <a href="#" target='_blank' rel='noopener noreferrer' className=" font-['Myfont'] text-3xl relative inline-flex items-baseline group w-fit text-black font-medium before:content-[''] before:bg-[#FFE68C] before:absolute before:w-[0%] before:h-3 before:z-[-1] before:transition-all before:duration-[0.3s] before:ease-[ease-in-out] before:left-0 before:bottom-2 hover:before:w-full hover:before:bottom-2">
                         <span className="relative z-10">

@@ -17,7 +17,7 @@ const TextContent = () => {
             {/*<p className={`self-start pb-4 last:pb-0 basis-0 max-md:max-w-full text-justify`}>
                 If there's one sentance you'd use to describe me it might be: <br/><span className="font-semibold">I like to keep my hands busy.</span>
             </p>*/}
-            <p className={`self-start pb-10 last:pb-0 basis-0 max-md:max-w-full text-justify`}>
+            <p className={`self-start pb-6 last:pb-0 basis-0 max-md:max-w-full text-justify`}>
                I'm a Computer Engineering student interested in the intersection of creativity and innovation, and exploring the application of technology in our everyday lives and interdisciplinarily in other fields. As I continue my journey in this ever-evolving industry,  <span className="font-semibold">I'm excited to keep my hands busy — learning, experimenting, and contributing to the future of technology</span>.
             </p> 
             <p className={`text-justify self-start pb-4 last:pb-0 basis-0 max-md:max-w-full `}>
@@ -31,7 +31,7 @@ const ImagePlaceholder = () => {
     return (
         <div className="">
             <FadeInFromBottom>
-                <div className="h-[320px]  hover:rotate-[-2deg] flex overflow-clip flex-col border-zinc-200 border bg-white px-4 pt-4 pb-4 flex-1 ">
+                <div className="h-[320px] -translate-y-8 hover:rotate-[-2deg] flex overflow-clip flex-col border-zinc-200 border bg-white px-4 pt-4 pb-4 flex-1 shadow hover:shadpw-xl hover:-translate-y-10 transition ease-in-out">
                     <div className="border-zinc-200 border overflow-hidden w-full h-full">
                         <img src={HEADSHOT} about="Hmm...this should be a picture of me" className=" h-full w-full object-scale-down "/>
                     </div>

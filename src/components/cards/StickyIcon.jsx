@@ -2,7 +2,7 @@ import React from "react";
 
 const StickyIcon = ({colour, shadow, angle, title, Icon, iconSize = 20}) =>{
     return (
-        <div className=" font-['Myfont'] text-2xl w-40" style={{rotate: angle}}>
+        <div className=" hover:-translate-y-2 transition ease-in-out font-['Myfont'] text-2xl w-40" style={{rotate: angle}}>
             <div className="w-full h-10" style={{backgroundColor: shadow}}></div>
             <div className="flex justify-center px-8 py-8 w-full min-h-36 drop-shadow-lg" style={{backgroundColor: colour}}>
             {title === 'NULL' ? (

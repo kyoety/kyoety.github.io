@@ -13,7 +13,7 @@ const Work = () => {
                         <WorkCard
                             title = {work.title}
                             photo = {work.photo}
-                            
+                            angle = {work.angle}
                         />
                     </div>
                 ))}
