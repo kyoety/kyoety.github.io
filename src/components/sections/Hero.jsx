@@ -36,7 +36,7 @@ const Stickies = () => {
             <FadeInFromBottom classNames={' lg:h-full md:h-full w-full flex flex-col lg:gap-4 md:gap-2'}>
                 <div className="relative translate-x-20 z-10 font-['Myfont'] text-2xl w-full lg:max-w-64 md:max-w-40 rotate-[-2deg] h-full lg:max-h-28 md:max-h-20">
                     <div className="w-full lg:h-10 md:h-6 bg-[#EEA8DA]"></div>
-                    <div className="flex flex-row justify-center py-2 w-full h-full drop-shadow-lg  px-10 font-['Myfont'] bg-[#ffc9f0]">
+                    <div className="flex flex-row justify-center py-2 w-full h-full drop-shadow-lg  px-16 font-['Myfont'] bg-[#ffc9f0]">
                         <a href='https://www.linkedin.com/in/katherineytye/' target='_blank' className="mx-2 size-8 transition ease-in-out duration-100 hover:-translate-y-2"> <IconLinkedin/></a>
                         {/*<a href='https://www.instagram.com/_chezkath/' target='_blank' className="size-8  hover:-translate-y-2"> <IconInstagram/></a>*/}
                         <a href='https://github.com/kyoety' target='_blank' className="size-9 mx-2 transition ease-in-out duration-100 hover:-translate-y-2"> <IconGitHub/></a>
