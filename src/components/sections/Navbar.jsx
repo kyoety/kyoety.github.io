@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div className="bg-[#FFE68C] flex flex-col justify-between w-full min-w-80 drop-shadow-md items-end h-full pt-20 pb-24 px-12 ">
                     <ul className="flex flex-col gap-4 md:gap-4 text-left cursor-pointer">
                         {navLinks.map((link, index) => (
-                            <li key={index} className="text-black font-['MyFont']  pl-20 text-2xl duration-100 hover:-translate-y-1">
+                            <li key={index} className="text-black font-['MyFont'] transition ease-in-out pl-20 text-2xl duration-100 hover:-translate-y-1">
                                 <Link to={link.url}>
                                 {link.title}
                                 </Link>
