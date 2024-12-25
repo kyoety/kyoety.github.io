@@ -79,15 +79,15 @@ function Projects() {
             All Projects
             </p>
           </div>
-          <table ref={tableRef} className="px-40 mt-2 w-full border-collapse table-auto text-left ">
+          <table ref={tableRef} className="px-40 w-full border-collapse table-auto text-left ">
             <thead className="sticky top-0 z-10 border-b-2 border-[#ffc9f0]  py-5 ">
               <tr className="">
-                <th className="w-64"></th>
+                <th className="w-72"></th>
                 <th className="py-4 pl-10 pr-10 text-sm font-semibold ">Year</th>
                 <th className="py-4 pr-10 text-sm font-semibold ">Project</th>
                 <th className="hidden py-4 pr-10 text-sm font-semibold lg:table-cell">Built with</th>
                 <th className="hidden py-4 pr-10 text-sm font-semibold sm:table-cell">Link</th>
-                <th className="w-48"></th>
+                <th className="w-64"></th>
               </tr>
             </thead>
             <tbody>
