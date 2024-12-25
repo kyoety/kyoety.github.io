@@ -123,9 +123,7 @@ function Projects() {
                             href = {project.external}
                           >
                             {project.ext}
-                            <span className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-y-px">
-                              <IconExternalOpen/>
-                            </span>
+                            
                           </a>
                           ):(
                           <a 
@@ -136,7 +134,9 @@ function Projects() {
                             href = {project.external}
                           >
                             {project.ext}
-                            
+                            <span className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-y-px">
+                              <IconExternalOpen/>
+                            </span>
                           </a>
                           )}
                           
