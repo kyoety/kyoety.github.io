@@ -47,7 +47,7 @@ function Experience() {
   };
 
   return (
-      <div className="flex flex-col  px-20 w-full  text-left">
+      <div className="flex flex-col  px-20 w-full mb-6 text-left">
   
           <div className="flex pr-10 flex-row w-full h-fit items-end justify-between">
             <h2 className="text-4xl font-['Inter-ExtraBold'] text-black">
