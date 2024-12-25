@@ -4,8 +4,8 @@ import SkillTag from './SkillTag';
 function Card({ period, title, description, skills, number }) {
 
     return (
-        <div className="flex flex-row gap-2.5 items-start w-full lg:max-w-[600px]">
-            <p className="mr-4 text-base w-fit text-nowrap text-zinc-400 ">{period}</p>
+        <div className="flex flex-row gap-2.5 items-start w-full lg:max-w-[640px]">
+            <p className="mr-12 text-base w-fit text-nowrap text-zinc-400 ">{period}</p>
             <div className="flex flex-col text-sm w-fit">
                 <h3 className={`
                     ${number==1 ? 'text-base font-bold text-black underline underline-offset-4 decoration-2 decoration-[#FFE68C] max-md:max-w-full' : ''}
