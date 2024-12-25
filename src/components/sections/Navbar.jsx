@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Socials from '../cards/Socials'
+import { Outlet, Link } from "react-router-dom";
 
 const navLinks = [
     { title: 'HOME', url: '/' },
@@ -35,11 +36,17 @@ const Navbar = () => {
     };
 
     return (
-        <>  <div className="flex flex-row -translate-x-[300px] w-full h-full transition ease-in-out delay-200 duration-300 hover:-translate-x-40 hover:rotate-[2deg] ">
+        <>  
+        
+        <nav className="flex flex-row -translate-x-[300px] w-full h-full transition ease-in-out delay-200 duration-300 hover:-translate-x-40 hover:rotate-[2deg] ">
                 <div className="bg-[#FFE68C] flex flex-col justify-between w-full min-w-80 drop-shadow-md items-end h-full pt-20 pb-24 px-12 ">
                     <ul className="flex flex-col gap-4 md:gap-4 text-left cursor-pointer">
                         {navLinks.map((link, index) => (
-                            <li key={index} className="text-black font-['MyFont']  pl-20 text-2xl hover:-translate-y-1">{link.title}</li>
+                            <li key={index} className="text-black font-['MyFont']  pl-20 text-2xl duration-100 hover:-translate-y-1">
+                                <Link to={link.url}>
+                                {link.title}
+                                </Link>
+                            </li>
                         ))}
                     </ul>
                     <Socials/>
@@ -50,7 +57,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 
-            </div>
+            </nav>
         </>
     );
 }

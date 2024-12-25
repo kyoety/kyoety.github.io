@@ -47,7 +47,7 @@ const ProjectDetails = ({ title, description, technologies, external}) => {
                         </span>
                     </a>
                 </h3>
-                <hr class="h-px my-2  bg-red-200 border-0 dark:bg-gray-700"></hr>
+                <hr class="h-[2px] my-2  bg-[#ffc9f0] border-0 dark:bg-gray-700"></hr>
             </div>
 
             <div class="h-full flex flex-col justify-between">

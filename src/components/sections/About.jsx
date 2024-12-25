@@ -1,9 +1,9 @@
 import React from "react";
-import Sticky from "../cards/Sticky"
-import StaggeredFadeIn from '../animations/StaggeredFadeIn';
+import Sticky from "../cards/Sticky.jsx"
+import StaggeredFadeIn from '../animations/StaggeredFadeIn.jsx';
 import info from '../../data/info.js';
 import ARROW from '../../images/arrow_tech.png'
-import StickyIcon from "../cards/StickyIcon";
+import StickyIcon from "../cards/StickyIcon.jsx";
 import ReactIcon from "../icons/react.js"; // Import your SVG as a React component
 import NodeIcon from "../icons/node_icon.js"; // Import your SVG as a React component
 import PythonIcon from "../icons/python.js"; // Import your SVG as a React component
@@ -51,7 +51,7 @@ function AboutMe() {
         <div className="flex flex-col w-full text-left px-20 ">
             <div className="flex flex-col gap-4 justify-center w-full text-black max-md:max-w-full ">
                 <h1 className="text-5xl font-['Myfont'] max-md:max-w-full">
-                    ABOUT ME
+                    About me:
                 </h1>
                 <div className="flex flex-col ">
                     <div className="flex h-full w-full flex-row gap-x-10 mb-12">

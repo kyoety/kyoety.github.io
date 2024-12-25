@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <section>
+        <section className='pb-6'>
             <a>© 2024 Katherine Ye</a>
         </section>
 

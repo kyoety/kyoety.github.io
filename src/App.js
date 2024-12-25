@@ -1,26 +1,28 @@
 
 import './App.css';
-import Layout from "./components/Layout";
+import Layout from "./pages/Layout";
 import Hero from "./components/sections/Hero";
 import AboutMe from "./components/sections/About";
 import Experience from "./components/sections/Experience";
-import Projects from './components/sections/Projects';
+import Projects from './pages/Projects';
 import SpotifyNowPlaying from './components/spotify/SpotifyNowPlaying';
 import Footer from './components/sections/Footer';
-import Gallery from './components/sections/Gallery';
-
+import Gallery from './pages/Gallery';
+import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Layout>
-        <Hero></Hero>
-        <AboutMe></AboutMe>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Gallery></Gallery>
-        <Footer></Footer>
-      </Layout>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="gallery" element={<Gallery />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }

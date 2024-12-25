@@ -1,9 +1,10 @@
 import React from 'react';
 import ProjectCard from '../projects/ProjectCard.jsx';
 import info from '../../data/info.js';
-import ArrowRight from '../icons/arrowright';
-import FadeInFromBottom from '../animations/FadeInFromBottom';
-import StaggeredFadeIn from '../animations/StaggeredFadeIn';
+import ArrowRight from '../icons/arrowright.js';
+import FadeInFromBottom from '../animations/FadeInFromBottom.jsx';
+import StaggeredFadeIn from '../animations/StaggeredFadeIn.jsx';
+import { Link } from 'react-router-dom';
 
 const projectsData = [
   {
@@ -42,36 +43,35 @@ const Projects = () => {
   
         <section className="flex flex-col mt-6 mb-10  w-full gap-6">
           <StaggeredFadeIn classNames={'flex flex-col  gap-6'}>
-            {info.projects.map((project, index) => (
+            {info.features.map((feature, index) => (
               <ProjectCard
                 key={index}
-                title={project.title}
-                external={project.external}
-                description={project.description}
-                technologies={project.technologies}
-                imagePosition={project.imagePosition}
-                photo={project.photo}
-                alt={project.alt}
+                title={feature.title}
+                external={feature.external}
+                description={feature.description}
+                technologies={feature.technologies}
+                imagePosition={feature.imagePosition}
+                photo={feature.photo}
+                alt={feature.alt}
               />
             ))}
           </StaggeredFadeIn>
 
         </section>
         <div className="pl-20">
-          <a href="#" target='_blank' rel='noopener noreferrer' className=" font-['Myfont'] text-3xl relative inline-flex items-baseline group w-fit text-black font-medium before:content-[''] before:bg-[#FFE68C] before:absolute before:w-[0%] before:h-3 before:z-[-1] before:transition-all before:duration-[0.3s] before:ease-[ease-in-out] before:left-0 before:bottom-2 hover:before:w-full hover:before:bottom-2">
-            <span className="relative z-10">
-              <div className="inline-flex gap-2 items-center">
-                View all projects
-                <span className="transition-transform delay-200 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-x-px">
-                  <ArrowRight/>
-                </span>
-              </div>
-            </span>
-          </a>
+          <Link to='/projects'>
+            <a href="#" target='_blank' rel='noopener noreferrer' className=" font-['Myfont'] text-3xl relative inline-flex items-baseline group w-fit text-black font-medium before:content-[''] before:bg-[#FFE68C] before:absolute before:w-[0%] before:h-3 before:z-[-1] before:transition-all before:duration-[0.3s] before:ease-[ease-in-out] before:left-0 before:bottom-2 hover:before:w-full hover:before:bottom-2">
+              <span className="relative z-10">
+                <div className="inline-flex gap-2 items-center">
+                  View all projects
+                  <span className="transition-transform delay-200 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-x-px">
+                    <ArrowRight/>
+                  </span>
+                </div>
+              </span>
+            </a>
+          </Link>      
         </div>
-
-
-
       </div>
   
     );
