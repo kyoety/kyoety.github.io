@@ -114,32 +114,31 @@ function Projects() {
                   <td className="hidden py-4  align-top sm:table-cell">
                       <ul>
                         <li>
-                          {project.ext === "" ? (
+                        {project.ext === "" ? (
                             <a 
                             className="inline-flex gap-2 items-center font-medium leading-tight group text-sm"
                             
                             target="_blank" 
                             rel="noreferrer noopener"
                             href = {project.external}
-                          >
-                            {project.ext}
+                            >
+                              {project.ext}
                             
-                          </a>
+                            </a>
                           ):(
-                          <a 
-                            className="inline-flex gap-2 items-center font-medium leading-tight group text-sm"
-                            
-                            target="_blank" 
-                            rel="noreferrer noopener"
-                            href = {project.external}
-                          >
-                            {project.ext}
-                            <span className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-y-px">
-                              <IconExternalOpen/>
-                            </span>
-                          </a>
+                            <a 
+                              className="inline-flex gap-2 items-center font-medium leading-tight group text-sm"
+                              
+                              target="_blank" 
+                              rel="noreferrer noopener"
+                              href = {project.external}
+                            >
+                              {project.ext}
+                              <span className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-y-px">
+                                <IconExternalOpen/>
+                              </span>
+                            </a>
                           )}
-                          
                         </li>
                       </ul>
                   </td>
