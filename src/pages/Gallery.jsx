@@ -12,7 +12,7 @@ function Gallery() {
 
     
     return (
-      <div className="mb-16 mt-24 h-full mx-48 px-10 ">
+      <div className="mb-16 mt-24 mx-auto h-full">
         <div className="md:mb-5 w-full flex flex-row justify-between">
             <div className="mx-auto max-w-4xl text-left">
                 <Link to='/'>
@@ -31,7 +31,7 @@ function Gallery() {
                     Gallery
                 </p>
             </div>
-            <div className="h-10 translate-x-32 pr-24 ">
+            <div className="h-10 translate-x-32 pr-24 z-10">
                 <FadeInFromBottom classNames={'lg:h-full md:h-full w-fit flex flex-col lg:gap-4 md:gap-2'}>
                     <Sticky
                         colour="#9ddcff" 
