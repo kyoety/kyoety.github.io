@@ -57,11 +57,11 @@ function Projects() {
   }, [info.projects]);
 
     return (
-      <div className="mt-24 min-h-svh">
+      <div className="mt-24 mx-auto max-w-4xl min-h-svh">
         
         
         <div ref={tableContainerRef} className="h-full overflow-hidden">
-          <div className="mx-auto max-w-4xl px-20 lg:mb-10 md:text-3xl md:mb-5 text-left">
+          <div className="px-20 lg:mb-10 md:text-3xl md:mb-5 text-left">
             <Link to='/'>
               <a href="#" target='_blank' rel='noopener noreferrer' className=" font-['Myfont'] text-3xl relative inline-flex items-baseline group w-fit text-black font-medium before:content-[''] before:bg-[#FFE68C] before:absolute before:w-[0%] before:h-3 before:z-[-1] before:transition-all before:duration-[0.3s] before:ease-[ease-in-out] before:left-0 before:bottom-2 hover:before:w-full hover:before:bottom-2">
                 <span className="relative z-10">
@@ -114,7 +114,8 @@ function Projects() {
                   <td className="hidden py-4  align-top sm:table-cell">
                       <ul>
                         <li>
-                          <a 
+                          {project.ext === "" ? (
+                            <a 
                             className="inline-flex gap-2 items-center font-medium leading-tight group text-sm"
                             
                             target="_blank" 
@@ -126,6 +127,19 @@ function Projects() {
                               <IconExternalOpen/>
                             </span>
                           </a>
+                          ):(
+<a 
+                            className="inline-flex gap-2 items-center font-medium leading-tight group text-sm"
+                            
+                            target="_blank" 
+                            rel="noreferrer noopener"
+                            href = {project.external}
+                          >
+                            {project.ext}
+                            
+                          </a>
+                          )}
+                          
                         </li>
                       </ul>
                   </td>

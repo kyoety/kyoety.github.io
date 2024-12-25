@@ -12,7 +12,7 @@ function Gallery() {
 
     
     return (
-      <div className="mb-16 mt-24 mx-auto px-20 max-w-4xl  h-full">
+      <div className="mb-16 mt-24 mx-auto max-w-4xl h-full">
         <div className="md:mb-5 w-full flex flex-row justify-between">
             <div className="px-20 text-left">
                 <Link to='/'>
