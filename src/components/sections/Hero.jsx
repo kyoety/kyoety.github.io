@@ -5,6 +5,8 @@ import FadeInFromBottom from '../animations/FadeInFromBottom';
 import AVATAR from '../../images/avatar.PNG';
 import HOVER_PLAY from '../../images/hover_play.png';
 import HELLO_THERE from '../../images/hello_there.mp4'
+import IconLinkedin from "../icons/linkedin"
+import IconGitHub from "../icons/github";
 
 const Stickies = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -35,7 +37,9 @@ const Stickies = () => {
                 <div className="relative translate-x-20 z-10 font-['Myfont'] text-2xl w-full lg:max-w-64 md:max-w-40 rotate-[-2deg] h-full lg:max-h-28 md:max-h-20">
                     <div className="w-full lg:h-10 md:h-6 bg-[#EEA8DA]"></div>
                     <div className="flex flex-row justify-start py-2 w-full h-full drop-shadow-lg font-['Myfont'] bg-[#ffc9f0]">
-                        <img className="object-scale-down w-full h-full"  src={HOVER_PLAY} />
+                            <a href='https://www.linkedin.com/in/katherineytye/' target='_blank' className="size-8 duration-100 hover:-translate-y-2"> <IconLinkedin/></a>
+                            {/*<a href='https://www.instagram.com/_chezkath/' target='_blank' className="size-8  hover:-translate-y-2"> <IconInstagram/></a>*/}
+                            <a href='https://github.com/kyoety' target='_blank' className="size-9 transition ease-in-out duration-100 hover:-translate-y-2"> <IconGitHub/></a>
                     </div>
                 </div>
                 <div 
