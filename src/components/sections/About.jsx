@@ -13,15 +13,15 @@ import FadeInFromBottom from "../animations/FadeInFromBottom.jsx";
 
 const TextContent = () => {
     return (
-        <li className=" flex-1 leading-7 font-normal text-base flex h-fit flex-col">
-            <p className={`self-start pb-4 last:pb-0 basis-0 max-md:max-w-full `}>
-                If there's one sentance you'd use to describe me it might be: <br/><span className="font-bold">I like to keep my hands busy.</span>
-            </p>
-            <p className={`self-start pb-4 last:pb-0 basis-0 max-md:max-w-full `}>
-                Hi! I'm Katherine Ye, a Computer Engineering student interested in the intersection of creativity and innovation, and exploring the application of technology in our lives and other fields. As I continue my journey in this ever-evolving industry,  <span className="font-bold">I'm excited to keep my hands busy — learning, experimenting, and contributing to the future of technology</span>.
+        <li className=" flex-1 leading-7 font-normal flex h-fit flex-col">
+            {/*<p className={`self-start pb-4 last:pb-0 basis-0 max-md:max-w-full text-justify`}>
+                If there's one sentance you'd use to describe me it might be: <br/><span className="font-semibold">I like to keep my hands busy.</span>
+            </p>*/}
+            <p className={`self-start pb-10 last:pb-0 basis-0 max-md:max-w-full text-justify`}>
+               I'm a Computer Engineering student interested in the intersection of creativity and innovation, and exploring the application of technology in our everyday lives and interdisciplinarily in other fields. As I continue my journey in this ever-evolving industry,  <span className="font-semibold">I'm excited to keep my hands busy — learning, experimenting, and contributing to the future of technology</span>.
             </p> 
-            <p className={`self-start pb-4 last:pb-0 basis-0 max-md:max-w-full `}>
-                When I'm not at the computer you can find me drawing, cooking, on a hike, or playing the NYT crossword archives.
+            <p className={`text-justify self-start pb-4 last:pb-0 basis-0 max-md:max-w-full `}>
+                When I'm not at my computer you can find me <span className="font-semibold"> drawing, practicing guitar/piano, on a hike, or playing the NYT crossword archives.</span>
             </p> 
         </li> 
     );
@@ -51,7 +51,7 @@ function AboutMe() {
         <div className="flex flex-col w-full text-left px-20 ">
             <div className="flex flex-col gap-4 justify-center w-full text-black max-md:max-w-full ">
                 <h1 className="text-5xl font-['Myfont'] max-md:max-w-full">
-                    About me:
+                    A bit about me:
                 </h1>
                 <div className="flex flex-col ">
                     <div className="flex h-full w-full flex-row gap-x-10 mb-12">

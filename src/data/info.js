@@ -111,7 +111,7 @@ const info = {
             description: "Developing and building a 3D printed mini arcade machine for multiplayer gameplay, using RPi3 and raylib.",
             technologies: [" C++ ", " Python ", "RPi3"],
             imagePosition: "right",
-            external: "https://github.com/kyoety/FinTracker",
+            external: "",
             ext: "",
             photo: FINTRACKER,
             alt: 'Mini Arcade',

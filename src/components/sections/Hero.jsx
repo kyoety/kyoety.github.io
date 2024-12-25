@@ -34,7 +34,7 @@ const Stickies = () => {
             <FadeInFromBottom classNames={' lg:h-full md:h-full w-full flex flex-col lg:gap-4 md:gap-2'}>
                 <div className="relative translate-x-20 z-10 font-['Myfont'] text-2xl w-full lg:max-w-64 md:max-w-40 rotate-[-2deg] h-full lg:max-h-28 md:max-h-20">
                     <div className="w-full lg:h-10 md:h-6 bg-[#EEA8DA]"></div>
-                    <div className="flex flex-row justify-start py-2 w-full h-full drop-shadow-lg bg-[#ffc9f0]">
+                    <div className="flex flex-row justify-start py-2 w-full h-full drop-shadow-lg font-['Myfont'] bg-[#ffc9f0]">
                         <img className="object-scale-down w-full h-full"  src={HOVER_PLAY} />
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const Profile = () => {
                     <p className="lg:text-6xl md:text-3xl font-['Inter-ExtraBold'] relative inline-flex items-end w-fit bg-[#FFE68C] absolute lg:h-8 md:h-6 z-[-1] bottom-0 ">
                         Katherine Ye
                     </p>
-                    <p className=" w-full lg:max-w-sm md:max-w-sm shrink-1 flex-1 text-justify lg:mt-4 md:mt-4 lg:text-xl md:text-xl lg:leading-8 md:leading-6 font-['Inter-SemiBold] text-[color:var(--sds-color-text-default-default)]">
+                    <p className=" w-full lg:max-w-sm md:max-w-sm shrink-1 flex-1 text-justify lg:mt-4 md:mt-4 lg:text-xl md:text-xl lg:leading-8 md:leading-6 font-medium text-[color:var(--sds-color-text-default-default)]">
                         I'm a <span className="underline lg:underline-offset-4 md:underline-offset-2 decoration-2 decoration-[#F384D4] ">designer and developer studying Computer Engineering at the University of Toronto</span>. I love building things and helping people!
                     </p>
                 </div>

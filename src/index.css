@@ -1,11 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Inter';
-  src: url('./fonts/Inter-4.0/InterVariable.ttf'), format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
   font-family: 'Inter-Black';
@@ -16,7 +12,7 @@
   font-family: 'Inter-ExtraBold';
   src: url('./fonts/Inter-4.0/extras/ttf/Inter-ExtraBold.ttf'), format('ttf');
 }
-
+/*
 :root {
   font-family: 'Inter', sans-serif;
   font-synthesis: none;
@@ -25,11 +21,12 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 
-}
+}*/
+/*
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
-
+*/
 ::-moz-selection {
   background-color: #ffcc00;
   background-blend-mode: multiply;

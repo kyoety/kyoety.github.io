@@ -52,7 +52,7 @@ const ProjectDetails = ({ title, description, technologies, external}) => {
 
             <div class="h-full flex flex-col justify-between">
                 <div>
-                    <p className="px-6 text-sm leading-6 text-zinc-500 max-md:max-w-full">{description}</p>
+                    <p className="text-justify px-6 text-sm leading-6 text-zinc-500 max-md:max-w-full">{description}</p>
                 </div>
                 
                 <div className="px-6 flex overflow-hidden flex-wrap gap-2.5 items-start mt-3.5 w-full whitespace-nowrap max-md:max-w-full">

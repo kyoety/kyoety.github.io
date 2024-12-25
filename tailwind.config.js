@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ['MyCustomFont', 'sans-serif'],
+        sans: ["Inter", "sans-serif"]
       },
       colors: {
         'highlight' : "#ffcc00",

@@ -6,6 +6,8 @@ import SkillTag from "../components/experience/SkillTag";
 import info from "../data/info";
 import ArrowLeft from '../components/icons/arrowleft';
 import { Link } from "react-router-dom";
+import IconExternalOpen from '../components/icons/externalopen';
+
 
 function Projects() {
   const tableContainerRef = useRef(null);
@@ -113,12 +115,16 @@ function Projects() {
                       <ul>
                         <li>
                           <a 
-                            className="inline-flex items-baseline font-medium leading-tight hover:text-teal-300 focus-visible:text-teal-300 text-sm focus-visible:text-teal-300 group/link text-sm"
+                            className="inline-flex gap-2 items-center font-medium leading-tight group text-sm"
+                            
                             target="_blank" 
                             rel="noreferrer noopener"
                             href = {project.external}
                           >
                             {project.ext}
+                            <span className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none translate-y-px">
+                              <IconExternalOpen/>
+                            </span>
                           </a>
                         </li>
                       </ul>

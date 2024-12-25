@@ -14,7 +14,7 @@ function Card({ period, title, description, skills, number }) {
                 `}>
                     {title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-500 max-md:max-w-full">
+                <p className="text-justify mt-2 text-sm leading-6 text-zinc-500 max-md:max-w-full">
                     {description}
                 </p>
                 {   skills && (
