@@ -14,7 +14,6 @@ import ABLUESIT from '../images/gallery/ABLUESIT.png'
 
 
 
-
 const info = {
     // ============ MAIN DETAILS ============
     main: {
@@ -33,18 +32,38 @@ const info = {
 
     // ============ ABOUT ME ============
     about: {
-        description: ["If there's one sentance you might use to describe me it might be: I like to keep my hands busy, whether it be art, sports, or writing.","Coding became the ultimate outlet; as I dove into the world of software and tech my passion for design, technology, and the endless pursuit of knowledge began to grow. I thrive at the intersection of creativity and innovation, where I explore how technology can be applied to enhance our lives and push the boundaries of various fields through research and personal projects.", "Outside of work you can find me drawing or painting, cooking, on a hike, at the tennis court, or playing the NYT crossword archives."],
+        description: ["If there's one sentance you might use to describe me it might be: I like to keep my hands busy, whether it be art, sports, or writing.","Coding became the ultimate outlet; as I dove into the world of software and tech my passion for design, technology, and the endless pursuit of knowledge began to grow. I thrive at the intersection of creativity and innovation, where I explore how technology can be applied to enhance our lives and push the boundaries of various fields through research and personal projects.", "Outside of work you can find me drawing, geocaching, on a hike, or playing the NYT crossword archives."],
         photo: "../photo.webp"
     },
 
     // ============ PROJECTS ============
     projects: [
         {
-            title: "Multiplayer mini-arcade",
-            description: "Developing and building a 3D printed mini arcade machine for multiplayer gameplay, using RPi3 and raylib.",
-            technologies: [" C++ ", " Python ", "RPi3"],
-            external: "https://github.com/kyoety/FinTracker",
+            title: "Music discovery web application",
+            description: "Developing a web application with smart song reccomendation based on music metadata (genre, key, artist, year, etc.) by embedding dataset gathered from self hosted server (MusicBrainz) into Pinecone. Currently implementing relationship data visualization with a network graph using React, and modifying/traning models.",
+            technologies: [" Python ","Flask","Tenserflow", "Pinecone", "Docker", "React", "Tailwind"],
+            external: "#",
             ext: "",
+            photo: FINTRACKER,
+            alt: 'Harmonica',
+            year: '2024'
+        },
+        {
+            title: "Diffusion sound board",
+            description: "Developing and building soundboard (edge AI on RPi5), leading the training of modules to collect and embed sound datasets using Flask, Freesound API, and SentenceTransformers (pandas), into a vector database with Pinecone.",
+            technologies: [" Python ","Flask","Pandas", "Pinecone", "SentanceTransformers", "Freesound API" , "RPi5"],
+            external: "#",
+            ext: "",
+            photo: FINTRACKER,
+            alt: 'Diffusion sound board',
+            year: '2024'
+        },
+        {
+            title: "Multiplayer mini-arcade",
+            description: "Developed software including socket programming for arcade machines with multiplayer mode, built using Raspberry Pi 4, C++, raylib, and Python. Led team in research, debugging, and documentation, collaborating with team members through agile development cycle. Successfully demoed at club fair to 200+ students.",
+            technologies: [" C++ ", " Python ", "RPi4"],
+            external: "https://github.com/aFluffyHotdog/Tetris",
+            ext: "github.com/aFluffyHotdog/Tetris",
             photo: FINTRACKER,
             alt: 'Mini Arcade',
             year: '2024'
@@ -90,11 +109,10 @@ const info = {
             year: '2022'
 
         },
-        
         {
             title: "Rideshare application",
-            description: "Self-service multiplatform app for organizing carpooling between drivers and passangers. Features include live map, updates, and XXX idk man. // 200+ users",
-            technologies: ["HTML", "CSS", "JavaScript", "Python", "MySQL", "Django", "GitHub"],
+            description: "Developed and deployed on-demand service application for rideshare between drivers and passengers with MySQL and PHP, using Google Maps API. Managed end-to-end development and maintenance of user authentication, real-time location tracking, user-friendly trip coordination, etc. back-end services and seamless front-end interfaces, ensuring high scalability and user experience. Served 200+ users.",
+            technologies: ["HTML", "CSS", "JavaScript", "Python", "MySQL", "Django", "PythonAnywhere"],
             external: "#",
             ext: "",
             photo: TUTORI,
@@ -107,31 +125,9 @@ const info = {
     // ============ FEATURES ============
     features: [
         {
-            title: "Multiplayer mini-arcade",
-            description: "Developing and building a 3D printed mini arcade machine for multiplayer gameplay, using RPi3 and raylib.",
-            technologies: [" C++ ", " Python ", "RPi3"],
-            imagePosition: "right",
-            external: "",
-            ext: "",
-            photo: FINTRACKER,
-            alt: 'Mini Arcade',
-            year: '2024'
-        },
-        {
-            title: "Wordle AI",
-            description: "Basic ML made to solve the daily Wordle from the NYT using reinforcement learning and RNN.",
-            technologies: ["Python", "NumPy", "TensorFlow", "Keras"],
-            imagePosition: "left",
-            external: "https://github.com/kyoety/wordle_ML",
-            ext:"github.com/kyoety/wordle_ML",
-            photo: WORDLE,
-            alt: 'Wordle AI',
-            year: '2023'
-        },
-        {
             title: "tutori.me",
-            description: "Online free peer tutoring for underrepresented communities. Features include live chat, scheduling and booking, user-user interactions, and more. Sponsored by Pathways to Education, network of 200+ students.",
-            technologies: ["HTML", "CSS", "JavaScript", "C#", "MSQL", "Docker", "GitHub"],
+            description: "Online free peer tutoring for underrepresented communities. Features session authentication, include live chat, scheduling and booking, user-user interactions, and more. Sponsored by Pathways to Education, network of 200+ students.",
+            technologies: ["HTML", "CSS", "JavaScript", "C#", "MSQL", "Docker", "PythonAnywhere"],
             imagePosition: "right",
             external: "https://www.tutori.me/",
             ext: "tutori.me/",
@@ -139,6 +135,29 @@ const info = {
             alt: 'Tutori',
             year: '2022'
 
+        },
+        {
+            title: "Rideshare application",
+            description: "Developed and deployed on-demand service application for rideshare between drivers and passengers with MySQL and PHP, using Google Maps API. Managed end-to-end development and maintenance of user authentication, real-time location tracking, user-friendly trip coordination, etc. back-end services and seamless front-end interfaces, ensuring high scalability and user experience. Served 200+ users.",
+            technologies: ["HTML", "CSS", "JavaScript", "Python", "MySQL", "Django", "PythonAnywhere"],
+            imagePosition: "left",
+            external: "#",
+            ext: "",
+            photo: TUTORI,
+            alt: 'Tutori',
+            year: '2021'
+        
+        },
+        {
+            title: "Multiplayer mini-arcade",
+            description: "Developed software including socket programming for arcade machines with multiplayer mode, built using Raspberry Pi 4, C++, raylib, and Python. Led team in research, debugging, and documentation, collaborating with team members through agile development cycle. Successfully demoed at club fair to 200+ students.",
+            technologies: [" C++ ", " Python ", "RPi4"],
+            imagePosition: "right",
+            external: "https://github.com/aFluffyHotdog/Tetris",
+            ext: "github.com/aFluffyHotdog/Tetris",
+            photo: FINTRACKER,
+            alt: 'Mini Arcade',
+            year: '2024'
         }
     ],
     
@@ -147,14 +166,14 @@ const info = {
         {
             period: "May 2024 - Sept 2024",
             title: "Co-Op Designer · JP Thomson Architects Ltd",
-            description: "Designed company website, web admin, and project management system with dynamic CRUD, using REST API. Managed social media accounts and content creation, leading to a 50% increase in engagement within one month.",
-            skills: [" HTML", "CSS", "JavaScript", "C#", "MSQL", "Docker", "ASP.NET", "GitHub"],
+            description: "Led full-stack team development and deployment company website with MVC using C# with ASP.NET and MSSQL, integrated with an admin side dynamic management project system hosted on Cloudflare to ensure security and performance reliability. Improved SEO through UI/UX redesign resulting in a 30% increase in website traffic. Managed social media accounts, leading to a 50% increase in engagement within one month.",
+            skills: [" HTML", "CSS", "JavaScript", "C#", "MSQL", "Docker", "ASP.NET", "GitHub", "Cloudflare"],
             number: "2"
         },
         {
             period: "May 2024 - Aug 2024",
             title: "Research Assistant · ISTEP, University of Toronto",
-            description: "Developed frameworks for the ethical usage of ChatGPT through usability testing and systematic analysis of GenAI and LLM models, supervised by Dr Qin Liu and Professor Greg Evans. Methodology includes usability testing of GenAI models and technical analysis of LLM architecture. Attended UnERD 2024 as a podium presenter.",
+            description: "Developed frameworks for the ethical usage of ChatGPT through prompt engineering and analysis of GPT 4o and LLM architecture, supervised by Dr Qin Liu and Professor Greg Evans. Presented work at UnERD 2024 as a podium presentation.",
             number: "2"
         }
     ],
