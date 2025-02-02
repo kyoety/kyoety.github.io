@@ -2,7 +2,11 @@
   "short_name": "Portfolio",
   "name": "Katherine's Portfolio",
   "icons": [
-
+    {
+      "src": "my_logo_smallest.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
     {
       "src": "my_logo_small.png",
       "type": "image/png",
